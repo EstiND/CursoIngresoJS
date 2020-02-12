@@ -14,3 +14,4 @@ if (edad > 17) {
 } else  {
               alert("Eres menor de edad")
 }
+}

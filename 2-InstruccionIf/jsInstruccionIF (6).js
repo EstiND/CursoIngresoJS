@@ -10,7 +10,8 @@ if (edad > 17) {
     alert("Es adulte");
 
 }  else {
-    if (edad <13)
+    if (edad <13) 
+    {
         alert("Es niñe");
 }       else { 
     alert("Es adolecente");
@@ -21,3 +22,5 @@ if (edad > 17) {
 
 
 //FIN DE LA FUNCIÓN
+
+}       }   
