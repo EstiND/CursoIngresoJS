@@ -13,14 +13,26 @@ function mostrar()
     var promedioDeNegativos = 0;
 	var diferenciaEntrePositivosYnegativos = 0;
 	var respuesta=true;
+    
+	do {
+		do { 
+			   	var numero = prompt("ingrese un nùmero.");
 
-	while(respuesta)
-	{  
-   	var numero = prompt("ingrese un nùmero.");
+	            numero = parseInt(numero);
 
-	numero = parseInt(numero);
+		} while (isNaN(numero)) {
+		 numero = prompt("Ingrese un nùmero valido");
 
-	respuesta = confirm("Quiere agregar màs nùmeros?");}
+		 numero = parseInt(numero);
+	} }
+	
+	//while(respuesta)
+	  
+   	//var numero = prompt("ingrese un nùmero.");
+
+	//numero = parseInt(numero);
+
+	//respuesta = confirm("Quiere agregar màs nùmeros?");//}
 
 
 	 while (isNaN(numero)) {
@@ -39,9 +51,15 @@ function mostrar()
 			 contadorNegativos;}
 
 		 if (numero = 0) {
-			 contadorCero = numero; 
+			 contadorCero = contadorCero + 1; 
 		 }
          if (numero % 2 == 0) {
 			 contadorPares = numero;
-		 } 
+		 } promedioDePositivos = contadorPositivos / sumaPositivos;
+                //=negativos
+		   diferenciaEntrePositivosYnegativos = contadorPositivos - contadorNegativos;
+
+		   document.write("Promedio" ) + promedioDeNegativos;
+
 }//FIN DE LA FUNCIÓN
+//document.write 
