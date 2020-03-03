@@ -7,62 +7,49 @@ c.	Se pedirán un número positivo y se mostrará la cantidad de números divisi
 d.	Se pedirán un número positivo y se mostrará si el número es un número primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
+ var numero;
 function ComenzarIngreso () 
-{  
- 	var numero = document.getElementById("numero");
-}
+{  numero = document.getElementById("numero").value;
+   numero = parseInt(numero);
 
-function NumerosPares() {
-
-    var numero = document.getElementById("numero").value;
-    var contador = 0;
-    numero = parseInt(numero);
-
-    while (isNaN(numero) || numero < 1) 
+       while (isNaN(numero) || numero < 1) 
 
          numero = prompt("Ingrese un nùmero valido.");
          numero = parseInt(numero);}
-         
-         while (contador < numero) {
+
+function NumerosPares() {
+    ComenzarIngreso()
+    var contador = 0;
+    var contadorDePares = 0;    
+    while (contador < numero) {
 	 
          contador++;}
 
          if (contador % 2 ==0) {
-             console.log(contador);
-         }
-
-}
+             contadorDePares++;}}
 
 function NumerosImpares() {
 
-    var numero = document.getElementById("numero").value;
+    ComenzarIngreso()
     var contador = 0;
-    numero = parseInt(numero);
-
-    while (isNaN(numero) || numero < 1) 
-
-         numero = prompt("Ingrese un nùmero valido.");
-         numero = parseInt(numero);}
-         
-         while (contador < numero) {
+    var contadorDeImpares = 0;    
+    while (contador < numero) {
 	 
-         contador++;
+         contador++;}
 
          if (contador % 2 !=0) {
-             console.log(contador);
-         }
-}
+             contadorDeImpares++;}}
 
 function NumerosDivisibles () {
 
-    var numero;
-    var contador;
-    var contadorDivisor = 0; 
-
+     ComenzarIngreso()
+    var contador = 0;
+    var contadorDePares = 0;    
     while (contador <= 100) {
-        contador ++;
-    } if (numero % contador == 0) {
-        contadorDivisor ++;
-    }
+	 
+     contador++;}
+
+         if (contador % 2 ==0) {
+         contadorDePares++;}
 
 }

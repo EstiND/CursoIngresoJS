@@ -1,0 +1,42 @@
+Pedir los siguientes datos:
+ edad(mayores de 18)
+ sexo("f" o "m") y 
+ pasaje ("urbano", "nacional" o "internacional");
+
+ Pedir la edad y el sexo de los turistas en Argentina, y mencionar 
+
+a) El nombre del hombre con pasaje nacional más joven.
+
+b) El sexo y pasaje del pasajero/a más viejo.
+
+c) La cantidad de mujeres con pasaje urbano o nacional.
+
+d) El promedio de edad entre las mujeres.
+
+e) El promedio de edad entre los hombres con pasaje internacional.
+
+fuction mostrar () {
+
+    var edad = promt("Ingrese su edad");
+    var sexo = promt("Ingrese su sexo");
+    var pasaje = document.getElementById("pasaje").value;
+
+    switch (pasaje) {
+
+    case "urbano":
+    alert("Que comiences bien el año");
+
+    break;
+
+    case"nacional":
+    alert("A clases!!");
+
+    break;
+
+    case"internacional":
+    alert("Se vienen las vacaciones");
+
+    break;
+
+
+}

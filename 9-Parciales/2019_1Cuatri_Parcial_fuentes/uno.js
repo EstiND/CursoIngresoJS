@@ -8,7 +8,7 @@ function mostrar()
   
   largo = prompt("Ingrese el largo del rectangulo");
 
-   while (isNaN(numero)) {
+   while (isNaN(numero)) { 
 		 numero = prompt("Ingrese un nùmero valido");
 
    numero = parseInt(numero);}
